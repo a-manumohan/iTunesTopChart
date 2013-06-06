@@ -16,8 +16,17 @@
 		22BAB61817605B1D00A29D39 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BAB61717605B1D00A29D39 /* Default.png */; };
 		22BAB61A17605B1D00A29D39 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BAB61917605B1D00A29D39 /* Default@2x.png */; };
 		22BAB61C17605B1D00A29D39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BAB61B17605B1D00A29D39 /* Default-568h@2x.png */; };
-		22BAB61F17605B1D00A29D39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB61E17605B1D00A29D39 /* ViewController.m */; };
-		22BAB62217605B1D00A29D39 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BAB62017605B1D00A29D39 /* ViewController.xib */; };
+		22BAB63217605B7700A29D39 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB62A17605B7700A29D39 /* CoreDataManager.m */; };
+		22BAB63817605C0200A29D39 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BAB63717605C0200A29D39 /* CoreData.framework */; };
+		22BAB63B17605C9700A29D39 /* asiModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB63917605C9700A29D39 /* asiModel.xcdatamodeld */; };
+		22BAB63E17605D1000A29D39 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB63D17605D1000A29D39 /* Song.m */; };
+		22BAB64217605DF100A29D39 /* SongsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB64017605DF100A29D39 /* SongsListViewController.m */; };
+		22BAB64317605DF100A29D39 /* SongsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BAB64117605DF100A29D39 /* SongsListViewController.xib */; };
+		22BAB64717605F5500A29D39 /* SongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB64517605F5400A29D39 /* SongViewController.m */; };
+		22BAB64817605F5500A29D39 /* SongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BAB64617605F5400A29D39 /* SongViewController.xib */; };
+		22BAB64C17605FE200A29D39 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB64B17605FE200A29D39 /* NetworkManager.m */; };
+		22BAB6541760607200A29D39 /* TopChartParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB6531760607200A29D39 /* TopChartParser.m */; };
+		22BAB65E1760851A00A29D39 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BAB65D1760851A00A29D39 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +43,25 @@
 		22BAB61717605B1D00A29D39 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		22BAB61917605B1D00A29D39 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		22BAB61B17605B1D00A29D39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		22BAB61D17605B1D00A29D39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		22BAB61E17605B1D00A29D39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		22BAB62117605B1D00A29D39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		22BAB62917605B7700A29D39 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		22BAB62A17605B7700A29D39 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		22BAB63717605C0200A29D39 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		22BAB63A17605C9700A29D39 /* asiModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = asiModel.xcdatamodel; sourceTree = "<group>"; };
+		22BAB63C17605D1000A29D39 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		22BAB63D17605D1000A29D39 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		22BAB63F17605DF100A29D39 /* SongsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListViewController.h; sourceTree = "<group>"; };
+		22BAB64017605DF100A29D39 /* SongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsListViewController.m; sourceTree = "<group>"; };
+		22BAB64117605DF100A29D39 /* SongsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongsListViewController.xib; sourceTree = "<group>"; };
+		22BAB64417605F5400A29D39 /* SongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongViewController.h; sourceTree = "<group>"; };
+		22BAB64517605F5400A29D39 /* SongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongViewController.m; sourceTree = "<group>"; };
+		22BAB64617605F5400A29D39 /* SongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongViewController.xib; sourceTree = "<group>"; };
+		22BAB64A17605FE200A29D39 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		22BAB64B17605FE200A29D39 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		22BAB65017605FF700A29D39 /* ParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserDelegate.h; sourceTree = "<group>"; };
+		22BAB6521760607200A29D39 /* TopChartParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartParser.h; sourceTree = "<group>"; };
+		22BAB6531760607200A29D39 /* TopChartParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartParser.m; sourceTree = "<group>"; };
+		22BAB65C1760851A00A29D39 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		22BAB65D1760851A00A29D39 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BAB63817605C0200A29D39 /* CoreData.framework in Frameworks */,
 				22BAB60617605B1D00A29D39 /* UIKit.framework in Frameworks */,
 				22BAB60817605B1D00A29D39 /* Foundation.framework in Frameworks */,
 				22BAB60A17605B1D00A29D39 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +82,7 @@
 		22BAB5F917605B1D00A29D39 = {
 			isa = PBXGroup;
 			children = (
+				22BAB63717605C0200A29D39 /* CoreData.framework */,
 				22BAB60B17605B1D00A29D39 /* iTunesTopChart */,
 				22BAB60417605B1D00A29D39 /* Frameworks */,
 				22BAB60317605B1D00A29D39 /* Products */,
@@ -83,12 +110,19 @@
 		22BAB60B17605B1D00A29D39 /* iTunesTopChart */ = {
 			isa = PBXGroup;
 			children = (
+				22BAB65B17606A6F00A29D39 /* Constants */,
+				22BAB64D17605FF700A29D39 /* Parsers */,
+				22BAB64917605FE200A29D39 /* NetworkManager */,
+				22BAB62817605B7700A29D39 /* CoreDataManager */,
 				22BAB61417605B1D00A29D39 /* AppDelegate.h */,
 				22BAB61517605B1D00A29D39 /* AppDelegate.m */,
-				22BAB61D17605B1D00A29D39 /* ViewController.h */,
-				22BAB61E17605B1D00A29D39 /* ViewController.m */,
-				22BAB62017605B1D00A29D39 /* ViewController.xib */,
 				22BAB60C17605B1D00A29D39 /* Supporting Files */,
+				22BAB63F17605DF100A29D39 /* SongsListViewController.h */,
+				22BAB64017605DF100A29D39 /* SongsListViewController.m */,
+				22BAB64117605DF100A29D39 /* SongsListViewController.xib */,
+				22BAB64417605F5400A29D39 /* SongViewController.h */,
+				22BAB64517605F5400A29D39 /* SongViewController.m */,
+				22BAB64617605F5400A29D39 /* SongViewController.xib */,
 			);
 			path = iTunesTopChart;
 			sourceTree = "<group>";
@@ -105,6 +139,46 @@
 				22BAB61B17605B1D00A29D39 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22BAB62817605B7700A29D39 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				22BAB63C17605D1000A29D39 /* Song.h */,
+				22BAB63D17605D1000A29D39 /* Song.m */,
+				22BAB62917605B7700A29D39 /* CoreDataManager.h */,
+				22BAB62A17605B7700A29D39 /* CoreDataManager.m */,
+				22BAB63917605C9700A29D39 /* asiModel.xcdatamodeld */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		22BAB64917605FE200A29D39 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				22BAB64A17605FE200A29D39 /* NetworkManager.h */,
+				22BAB64B17605FE200A29D39 /* NetworkManager.m */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		22BAB64D17605FF700A29D39 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				22BAB65017605FF700A29D39 /* ParserDelegate.h */,
+				22BAB6521760607200A29D39 /* TopChartParser.h */,
+				22BAB6531760607200A29D39 /* TopChartParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		22BAB65B17606A6F00A29D39 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				22BAB65C1760851A00A29D39 /* Constants.h */,
+				22BAB65D1760851A00A29D39 /* Constants.m */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +236,8 @@
 				22BAB61817605B1D00A29D39 /* Default.png in Resources */,
 				22BAB61A17605B1D00A29D39 /* Default@2x.png in Resources */,
 				22BAB61C17605B1D00A29D39 /* Default-568h@2x.png in Resources */,
-				22BAB62217605B1D00A29D39 /* ViewController.xib in Resources */,
+				22BAB64317605DF100A29D39 /* SongsListViewController.xib in Resources */,
+				22BAB64817605F5500A29D39 /* SongViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +250,14 @@
 			files = (
 				22BAB61217605B1D00A29D39 /* main.m in Sources */,
 				22BAB61617605B1D00A29D39 /* AppDelegate.m in Sources */,
-				22BAB61F17605B1D00A29D39 /* ViewController.m in Sources */,
+				22BAB63217605B7700A29D39 /* CoreDataManager.m in Sources */,
+				22BAB63B17605C9700A29D39 /* asiModel.xcdatamodeld in Sources */,
+				22BAB63E17605D1000A29D39 /* Song.m in Sources */,
+				22BAB64217605DF100A29D39 /* SongsListViewController.m in Sources */,
+				22BAB64717605F5500A29D39 /* SongViewController.m in Sources */,
+				22BAB64C17605FE200A29D39 /* NetworkManager.m in Sources */,
+				22BAB6541760607200A29D39 /* TopChartParser.m in Sources */,
+				22BAB65E1760851A00A29D39 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +270,6 @@
 				22BAB60F17605B1D00A29D39 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		22BAB62017605B1D00A29D39 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22BAB62117605B1D00A29D39 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +374,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22BAB63917605C9700A29D39 /* asiModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22BAB63A17605C9700A29D39 /* asiModel.xcdatamodel */,
+			);
+			currentVersion = 22BAB63A17605C9700A29D39 /* asiModel.xcdatamodel */;
+			path = asiModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 22BAB5FA17605B1D00A29D39 /* Project object */;
 }
