@@ -19,4 +19,5 @@
 + (NetworkManager *)sharedInstance;
 
 - (void)getDataFromUrlString:(NSString *)urlString withParser:(id<ParserDelegate>)parser;
+- (void)getDataFromUrlString:(NSString *)urlString;
 @end

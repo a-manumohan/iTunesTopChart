@@ -33,4 +33,14 @@ static NetworkManager *sharedNetworkManager = nil;
     }];
     
 }
+- (void)getDataFromUrlString:(NSString *)urlString{
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response,NSData* data,NSError *error){
+        [self.delegate requestDataReceived:data];
+    }];
+    
+}
 @end

@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TopChartParser : NSObject
+@protocol TopChartParserDelegate <NSObject>
 
+-(void)parsedTopCharts:(NSArray *)topCharts;
+@optional
+-(void)parseError:(NSError *)error;
+
+@end
+@interface TopChartParser : NSObject<NSXMLParserDelegate>
+
+@property (nonatomic,assign) id<TopChartParserDelegate>delegate;
+
+-(void)parseTopCharts:(NSData *)data;
 @end

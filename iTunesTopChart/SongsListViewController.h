@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopChartParser.h"
+#import "NetworkManager.h"
 
-@interface SongsListViewController : UIViewController
+@interface SongsListViewController : UIViewController<NetworkManagerDelegate,TopChartParserDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *songListTable;
 @end
