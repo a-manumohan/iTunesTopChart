@@ -40,10 +40,7 @@
     [self loadAndSetImage];
     
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped)];
-    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageDoubleTapped)];
-    [doubleTap setNumberOfTapsRequired:2];
     [self.albumImageView addGestureRecognizer:singleTap];
-    [self.albumImageView addGestureRecognizer:doubleTap];
     
 }
 
@@ -79,7 +76,5 @@
     NSString *itunesLink = [NSString stringWithFormat:@"itms-apps%@",trimmedLink];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:itunesLink]];
 }
-- (void)imageDoubletapped{
-    
-}
+
 @end
