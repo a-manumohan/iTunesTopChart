@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Song.h"
 
-@interface SongViewController : UIViewController
+@interface SongViewController : UIViewController<UIScrollViewDelegate>
+@property (nonatomic,strong) Song *song;
+@property (nonatomic,strong) UIImage *albumImage;
+@property (weak, nonatomic) IBOutlet UIScrollView *imageScrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *albumImageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end

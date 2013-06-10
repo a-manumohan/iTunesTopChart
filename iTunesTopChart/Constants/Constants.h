@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define serverUrl @"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml"
+
 @interface Constants : NSObject
 
 @end

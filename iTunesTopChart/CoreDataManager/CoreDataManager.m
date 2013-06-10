@@ -47,10 +47,10 @@ static CoreDataManager *sharedManager = nil;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setEntity:entityDescription];
     NSError *error;
-    NSArray *filesArray = [context executeFetchRequest:fetchRequest error:&error];
+    NSArray *resultArray = [context executeFetchRequest:fetchRequest error:&error];
     if(error != nil){
         return nil;
     }
-    return filesArray;
+    return resultArray;
 }
 @end

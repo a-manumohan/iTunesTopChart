@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22233E5B1761D3670024A981 /* SongsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22233E5A1761D3670024A981 /* SongsListTableViewCell.m */; };
+		22233E5D1761D3830024A981 /* SongsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22233E5C1761D3830024A981 /* SongsListTableViewCell.xib */; };
 		22BAB60617605B1D00A29D39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BAB60517605B1D00A29D39 /* UIKit.framework */; };
 		22BAB60817605B1D00A29D39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BAB60717605B1D00A29D39 /* Foundation.framework */; };
 		22BAB60A17605B1D00A29D39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BAB60917605B1D00A29D39 /* CoreGraphics.framework */; };
@@ -30,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22233E591761D3670024A981 /* SongsListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListTableViewCell.h; sourceTree = "<group>"; };
+		22233E5A1761D3670024A981 /* SongsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsListTableViewCell.m; sourceTree = "<group>"; };
+		22233E5C1761D3830024A981 /* SongsListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongsListTableViewCell.xib; sourceTree = "<group>"; };
 		22BAB60217605B1D00A29D39 /* iTunesTopChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesTopChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BAB60517605B1D00A29D39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22BAB60717605B1D00A29D39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22233E531761BA720024A981 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				22233E591761D3670024A981 /* SongsListTableViewCell.h */,
+				22233E5A1761D3670024A981 /* SongsListTableViewCell.m */,
+				22233E5C1761D3830024A981 /* SongsListTableViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		22BAB5F917605B1D00A29D39 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +125,7 @@
 		22BAB60B17605B1D00A29D39 /* iTunesTopChart */ = {
 			isa = PBXGroup;
 			children = (
+				22233E531761BA720024A981 /* CustomViews */,
 				22BAB65B17606A6F00A29D39 /* Constants */,
 				22BAB64D17605FF700A29D39 /* Parsers */,
 				22BAB64917605FE200A29D39 /* NetworkManager */,
@@ -238,6 +254,7 @@
 				22BAB61C17605B1D00A29D39 /* Default-568h@2x.png in Resources */,
 				22BAB64317605DF100A29D39 /* SongsListViewController.xib in Resources */,
 				22BAB64817605F5500A29D39 /* SongViewController.xib in Resources */,
+				22233E5D1761D3830024A981 /* SongsListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +275,7 @@
 				22BAB64C17605FE200A29D39 /* NetworkManager.m in Sources */,
 				22BAB6541760607200A29D39 /* TopChartParser.m in Sources */,
 				22BAB65E1760851A00A29D39 /* Constants.m in Sources */,
+				22233E5B1761D3670024A981 /* SongsListTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +390,7 @@
 				22BAB62717605B1D00A29D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

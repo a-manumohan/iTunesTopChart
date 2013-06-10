@@ -14,7 +14,6 @@
     NSMutableDictionary *song;
     BOOL isImage;
     BOOL isCollection;
-    BOOL isLink;
 }
 @end
 @implementation TopChartParser
@@ -35,7 +34,6 @@
         song = [[NSMutableDictionary alloc] init];
         isImage = NO;
         isCollection = NO;
-        isLink = NO;
     }else if([elementName isEqualToString:@"im:image"]){
         NSString *height = [attributeDict objectForKey:@"height"];
         if([height isEqualToString:@"170"]){
@@ -47,7 +45,7 @@
         if(isCollection){
             NSString *rel = [attributeDict objectForKey:@"rel"];
             if([rel isEqualToString:@"alternate"]){
-                isLink = YES;
+                [song setValue:[attributeDict objectForKey:@"href"] forKey:@"link"];
             }
         }
     }
@@ -66,11 +64,8 @@
             [song setValue:currentXmlElement forKey:@"imageUrl"];
             isImage = NO;
         }
-    }else if([elementName isEqualToString:@"link"]){
-        if(isLink){
-            [song setValue:currentXmlElement forKey:@"link"];
-            isLink = NO;
-        }
+    }else if([elementName isEqualToString:@"im:collection"]){
+        isCollection = NO;
     }
 }
 - (void)parserDidEndDocument:(NSXMLParser *)parser{
